@@ -1,6 +1,6 @@
-## SocialTools 
-SocialTools - Р­С‚Рѕ РєРѕРјРїРѕРЅРµРЅС‚ РґР»СЏ СЃРѕС†РёР°Р»СЊРЅРѕР№ СЃРѕСЃС‚РѕРІР»СЏСЋС‰РµР№ CMS / CMF MODX Revolution. РќР° РґР°РЅРЅРѕРј СЌС‚Р°РїРµ СЃ РїРѕРјРѕС‰СЊСЋ РЅРµРіРѕ РјРѕР¶РЅРѕ РѕС‚РїСЂР°РІР»СЏС‚СЊ СЃРѕРѕР±С‰РµРЅРёСЏ, С‡РёС‚Р°С‚СЊ СЃРѕРѕР±С‰РµРЅРёСЏ,  РїРѕР»СѓС‡Р°С‚СЊ СЃРїРёСЃРєРё РІС…РѕРґСЏС‰РёС… Рё РёСЃС…РѕРґСЏС‰РёС… СЃРѕРѕР±С‰РµРЅРёР№.
-## SocialTools
-SocialTools - This Extra social composes CMS / CMF MODX Revolution. At this stage, with it you can send messages, read messages, get a list of incoming and outgoing messages.
+## SocialTools - Русский 
+SocialTools - Это дополнение для социальной состовляющей CMS / CMF MODX. На данном этапе с помощью него можно отправлять, читать,  получать списки входящих и исходящих сообщений.
+## SocialTools - English
+SocialTools - This addition to the social composes CMS / CMF MODX. At this stage, with it you can send, read, get a list of incoming and outgoing messages.
 
 

@@ -3,4 +3,4 @@ Changelog for SocialTools.
 SocialTools 0.2.0
 ==============
 - Initial release.
-- basic snippets for read message, send message, and get list message.
+- basic snippets for read messages, send messages, and get list messages.

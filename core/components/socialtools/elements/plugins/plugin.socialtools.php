@@ -17,8 +17,8 @@ switch ($modx->event->name) {
             $msg_inbox->save();
         }
         $pl_isread = $modx->getOption('socialtools.is_read');
-        $is_read = $modx->getCount('socDialogReceive',  array('is_read' => 0, 'recipient' => $user->id))
-        if($is_read! = 0 )
+        $is_read = $modx->getCount('socDialogReceive',  array('is_read' => 0, 'recipient' => $user->id));
+        if($is_read != 0 )
         {$modx->setPlaceholder($pl_isread, $is_read);}
         break;
 }
