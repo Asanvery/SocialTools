@@ -1,0 +1,5 @@
+Changelog for SocialTools.
+
+SocialTools 0.1.0
+==============
+- Initial release.
