@@ -1,10 +1,10 @@
 --------------------
 SocialTools
 --------------------
-Author: John Doe <john@doe.com>
+Author: Pekshev Alexsandr <uokill@gmail.com>
 --------------------
 
-A basic Extra for MODx Revolution.
+SocialTools - This Extra social composes CMS / CMF MODX Revolution. At this stage, with it you can send messages, read messages, get a list of incoming and outgoing messages.
 
 Feel free to suggest ideas/improvements/bugs on GitHub:
-http://github.com/username/SocialTools/issues
+https://github.com/Asanvery/SocialTools
