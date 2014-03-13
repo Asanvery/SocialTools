@@ -5,7 +5,7 @@ SocialTools -  это компонент с социальным функцио�
 Создайте ресурс со снипетом ``[[!socDialogForm]]``
 * для списка входящих сообщения 
  
- *в данном примере используется pdoPage, вы также можете использыватья getPage*
+ *в данном примере используется pdoPage, вы также можете использовать getPage*
  ``[[!pdoPage?
   &element=`socDialogList` 
   &action=`inbox` 
@@ -23,12 +23,40 @@ SocialTools -  это компонент с социальным функцио�
   `` [[!socDialogReceive]] `` 
 
 
-#### обязательно перед работой нужно поправить  чанки по умолчанию
-* ~readMsgResourceID - изменить на ресурс со снипетом `` [[!socDialogReceive]] ``
+#### обязательно перед работой нужно исправить чанки по умолчанию
+* ~readMsgResourceID - изменить на ресурс со сниппетом `` [[!socDialogReceive]] ``
 
-* ~formSendResourceID - изменить на ресурс со снипетом `` [[!socDialogForm]] ``
+* ~formSendResourceID - изменить на ресурс со сниппетом `` [[!socDialogForm]] ``
 
 ## SocialTools 
 SocialTools - a component of the social functionality for CMS / CMF MODX. With it you can send and read messages, get a list of incoming and outgoing messages.
+
+### Examples
+* To send a message
+Create a resource with Snippets ``[[!socDialogForm]]``
+* for a list of incoming messages 
+ 
+ *used in this example pdoPage, you can also use getPage*
+ ``[[!pdoPage?
+  &element=`socDialogList` 
+  &action=`inbox` 
+]]
+``
+* for a list of outgoing messages
+
+ ``[[!pdoPage?
+  &element=`socDialogList` 
+  &action=`outbox` 
+]]
+``
+* To read messages
+
+  `` [[!socDialogReceive]] `` 
+
+
+#### necessarily need to be corrected before work chunks default
+* ~readMsgResourceID - change in the resource with snippet `` [[!socDialogReceive]] ``
+
+* ~formSendResourceID - change in the resource with snippet `` [[!socDialogForm]] ``
 
 
