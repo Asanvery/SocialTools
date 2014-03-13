@@ -18,6 +18,7 @@ $_lang['socialtools_intro_msg'] = 'Управляйте вашими предм�
 
 //SocialTools
 $_lang['socialtools_err_noauth'] = 'Вы должны авторизоваться';
+$_lang['socialtools_err'] = 'Ошибка';
 // socDialog lexicon
 $_lang['socialtools_dialog_delete'] = 'Сообщение удалено';
 $_lang['socialtools_dialog_error_remove'] = 'Ошибка удаления';
@@ -34,3 +35,5 @@ $_lang['socialtools_form_recipient_label'] = 'Кому';
 $_lang['socialtools_form_subject_label'] = 'Тема';
 $_lang['socialtools_form_message_label'] = 'Сообщение';
 $_lang['socialtools_form_submit_label'] = 'Отправить';
+$_lang['socialtools_form_button_answer'] = 'Ответить';
+$_lang['socialtools_form_button_delete'] = 'Удалить';

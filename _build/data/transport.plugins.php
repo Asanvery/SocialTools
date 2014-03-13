@@ -7,7 +7,8 @@ $tmp = array(
 		'file' => 'socialtools',
 		'description' => '',
 		'events' => array(
-			'OnManagerPageInit' => array()
+			'OnManagerPageInit' => array(),
+			'OnWebPageInit' => array()
 		)
 	)
 );

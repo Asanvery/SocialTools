@@ -23,27 +23,26 @@ switch($action)
         $tpl =  $modx->getOption('outboxTpl', $scriptProperties, 'soc.listRowOutbox');
         break;
     case 'default':
-        $WorkClass = "socDialogSend";
-        $c = $modx->newQuery($WorkClass);
-        $c->where(array('sender' => $user->id));
-        $tpl =  $modx->getOption('inboxTpl', $scriptProperties, 'soc.listRowInbox');
+        return $modx->lexicon('socialtools_err');
         break;
 }
 
 
 $total = $modx->getCount($WorkClass, $c);
-$totalVar = $modx->getOption('totalVarMsg', $scriptProperties, 'total');
+$totalVar = $modx->getOption('totalVar', $scriptProperties, 'total');
 $modx->setPlaceholder($totalVar,$total);
 
 $c->limit($limit, $offset);
 $c->sortby($sortby,$sortdir);
 $messages=$modx->getCollection($WorkClass,$c);
 
+
+
 foreach ($messages as $msg){
 
-   $msgarray = $msg->toArray();
+     $msgarray = $msg->toArray();
 
-     $output .= $modx->getChunk($tpl, $msgarray) . "\n";
+     $output .= $modx->getChunk($tpl, $msgarray) . $outputSeparator;
 
 }
 

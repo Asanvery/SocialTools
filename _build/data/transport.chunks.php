@@ -7,8 +7,12 @@ $tmp = array(
 		'file' => 'sendForm',
 		'description' => 'Send message form',
 	),
-	'soc.readForm' => array(
-		'file' => 'readForm',
+	'soc.readFormInbox' => array(
+		'file' => 'readFormInbox',
+		'description' => 'Read message form',
+	),
+	'soc.readFormOutbox' => array(
+		'file' => 'readFormOutbox',
 		'description' => 'Read message form',
 	),
 	'soc.listRowOutbox' => array(

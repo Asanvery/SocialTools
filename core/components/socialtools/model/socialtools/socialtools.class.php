@@ -88,6 +88,7 @@ class SocialTools {
 							$this->modx->regClientCSS("/".$css);
 				}
 			}
+			// switch notification
 			switch($this->modx->getOption('socialtools.notify'))
 			{
 				case 'alertify':
@@ -98,9 +99,7 @@ class SocialTools {
 				$this->modx->regClientCSS($this->config['cssUrl']."web/lib/jquery.jgrowl.css");
 				break;
 			}
-			
-			
-				break;
+			break;
 
 			default:
 				/* if you wanted to do any generic frontend stuff here.

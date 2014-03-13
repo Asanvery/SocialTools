@@ -18,33 +18,31 @@ moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
 box-shadow: 0 0 10px rgba(0,0,0,0.2);
 border: 1px solid #b1b1b1;
 }
+.social-msgReadContent{display:block;white-space: pre-wrap;word-wrap: break-word;overflow: hidden;}
 
 .btn-toolbar {float:right;}
-
-.btn-toolbar a{
-    display:inline-block;
-}
+.btn-toolbar a{display:inline-block;}
 
 a{text-decoration:none;}
-.social-box {margin:auto;width:900px;font-family:Calibri, Arial, Helvetica, sans-serif; font-size:15px; line-height:24px; margin:0px; padding:0px;color:#23323e;}
-.soc-photo{display:inline-block;height:32px;}
-.soc-listheader{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;max-width:150px;height:28px;}
-.soc-msgcontent{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;color:#9b9b9b;max-width:400px;height:28px;}
+.social-container {margin:auto;width:900px;font-family:Calibri, Arial, Helvetica, sans-serif; font-size:15px; line-height:24px; margin:0px; padding:0px;color:#23323e;}
+.social-photo{display:inline-block;height:32px;}
+.social-listheader{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;max-width:150px;height:28px;}
+.social-msgcontent{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;max-width:400px;height:28px;color:#9b9b9b;}
 .paging a{color:#9e373f;}
 .paging a:hover{color:#e4656f;}
 .social-msg{float:left;width:80%;padding:2px;}
 .social-msg a{display:block;background-color:#f8f8f8;padding:6px;border-radius:3px;margin-top:3px;color:black;border:1px solid #b1b1b1;text-decoration:none;height:32px;text-align:left;}
 .social-msg a:hover{background-color:#f8f8f8;
-	moz-box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Для Firefox */
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Для Safari и Chrome */
-    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Параметры тени */
-	}
+	moz-box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 .unread_mess a{font-weight:bold;background-color:#e9e9e9;}
 .unread_mess a:hover{font-weight:bold;background-color:#ededed;}
 .badge_msg {
   display: inline-block;
   padding: 2px 4px;
-    padding-right: 9px;
+  padding-right: 9px;
   padding-left: 9px;
   font-size: 11.844px;
   font-weight: bold;
@@ -54,25 +52,25 @@ a{text-decoration:none;}
   white-space: nowrap;
   vertical-align: baseline;
   background-color: #b94a48;
-    -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-          border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .socFormInput{display: block;
-width: 95%;
-height: 34px;
-padding: 6px 12px;
-font-size: 14px;
-line-height: 1.428571429;
-color: #555555;
-vertical-align: middle;
-background-color: #ffffff;
-border: 1px solid #cccccc;
-border-radius: 4px;
--webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
--webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  width: 95%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 .socFormInput:focus {
   border-color: #66afe9;
@@ -81,45 +79,45 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 #socForm label{
-display: inline-block;
-margin-bottom: 5px;
-font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 .socFormButton
 {
-display: block;
-color:white;
-background-color: #1f73b0;
-padding: 9px;
-border-radius: 3px;
-margin-top: 6px;
-border: 1px solid #b1b1b1;
-	}
+  display: block;
+  color:white;
+  background-color: #1f73b0;
+  padding: 9px;
+  border-radius: 3px;
+  margin-top: 6px;
+  border: 1px solid #b1b1b1;
+}
 .socFormButton:hover{
-moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
--webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
-box-shadow: 0 0 10px rgba(0,0,0,0.2);
-cursor: pointer;
-background-color:#005993;
+  moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  background-color:#005993;
 }
 #socForm textarea{
-display: block;
-width: 95%;
-padding: 6px 12px;
-font-size: 14px;
-line-height: 1.428571429;
-color: #555555;
-vertical-align: middle;
-background-color: #ffffff;
-border: 1px solid #cccccc;
-border-radius: 4px;
--webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
--webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  display: block;
+  width: 95%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 #socForm textarea:focus{
- border-color: #66afe9;
+  border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -127,7 +125,7 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 
 
 
-/* BOOTSTRAP CSS*/
+/* BOOTSTRAP CSS FORM, PAGINATION AND TABS*/
 input[type="search"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

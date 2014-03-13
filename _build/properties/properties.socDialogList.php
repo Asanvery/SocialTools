@@ -42,7 +42,7 @@ $tmp = array(
 		'type' => 'textfield',
 		'value' => "\n",
 	),
-	'totalVarMsg' => array(
+	'totalVar' => array(
 		'type' => 'textfield',
 		'value' => "total",
 	),

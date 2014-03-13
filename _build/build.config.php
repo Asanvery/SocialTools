@@ -4,7 +4,7 @@
 define('PKG_NAME', 'SocialTools');
 define('PKG_NAME_LOWER', strtolower(PKG_NAME));
 
-define('PKG_VERSION', '0.2.0');
+define('PKG_VERSION', '0.2.1');
 define('PKG_RELEASE', 'beta');
 define('PKG_AUTO_INSTALL', false);
 define('PKG_NAMESPACE_PATH', '{core_path}components/'.PKG_NAME_LOWER.'/');

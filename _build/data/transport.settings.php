@@ -8,12 +8,6 @@ $tmp = array(
 		'value' => false,
 		'area' => 'socialtools_debug',
 	),
-	'notify' => array(
-		'xtype' => 'textfield',
-        'value' => 'alertify',
-		'area' => 'socialtools_main',
-		
-	),
 	'frontend_css' => array(
 		'value' => '/assets/components/socialtools/css/web/default.css',
 		'xtype' => 'textfield',
@@ -27,9 +21,16 @@ $tmp = array(
 	'is_read' => array(
 		'value' => 'socIsRead',
 		'xtype' => 'textfield',
-		'area' => 'socialtools_main',
+		'area' => 'socialtools_message',
 	),
+	'notify' => array(
+		'xtype' => 'textfield',
+        'value' => 'alertify',
+		'area' => 'socialtools_message',
+	),
+	
 );
+
 
 
 foreach ($tmp as $k => $v) {

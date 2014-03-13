@@ -1,7 +1,8 @@
 <?php
 
 $_lang['socialtools_prop_tplFormCreate'] = 'Шаблон формы отправки сообщения';
-$_lang['socialtools_prop_tplFormRead'] = 'Шаблон формы чтения сообщения';
+$_lang['socialtools_prop_tplFormReadInbox'] = 'Шаблон  чтения входящих сообщения';
+$_lang['socialtools_prop_tplFormReadOutbox'] = 'Шаблон  чтения исходящих сообщения';
 $_lang['socialtools_list_prop_inboxTpl'] = 'Шаблон оформления строки вывода входящих сообщений';
 $_lang['socialtools_list_prop_outboxTpl'] = 'Шаблон оформления строки вывода исходящих сообщений';
 $_lang['socialtools_list_prop_limit'] = 'Лимит выборки результатов';

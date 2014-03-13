@@ -1,7 +1,8 @@
 <?php
 
 $_lang['socialtools_prop_tplFormCreate'] = 'Template form send';
-$_lang['socialtools_prop_tplFormRead'] = 'Template form read';
+$_lang['socialtools_prop_tplFormReadInbox'] = 'Template read inbox message';
+$_lang['socialtools_prop_tplFormReadOutbox'] = 'Template read outbox message';
 $_lang['socialtools_list_prop_inboxTpl'] = 'Template row inbox';
 $_lang['socialtools_list_prop_outboxTpl'] = 'Template row outbox';
 $_lang['socialtools_list_prop_limit'] = 'The number of results to limit';

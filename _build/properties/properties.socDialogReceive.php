@@ -3,9 +3,13 @@
 $properties = array();
 
 $tmp = array(
-	'tplFormRead' => array(
+	'tplFormReadInbox' => array(
 		'type' => 'textfield',
-		'value' => 'soc.readForm',
+		'value' => 'soc.readFormInbox',
+	),
+	'tplFormReadOutbox' => array(
+		'type' => 'textfield',
+		'value' => 'soc.readFormOutbox',
 	)
 	
 );

@@ -4,38 +4,34 @@ if(!$user = $modx->getAuthenticatedUser()){return $modx->lexicon('socialtools_er
 $socialTools = $modx->getService('SocialTools','SocialTools',$modx->getOption('core_path').'components/socialtools/'.'model/socialtools/',$scriptProperties);
 $socialTools->initialize($modx->context->key, $scriptProperties);
 
-$output = '';
-if(!empty($_GET['msgID']))
-$msgId =$_GET['msgID'];
+if(empty($_REQUEST['msgID']) && empty($_REQUEST['action'])){ return $modx->lexicon('socialtools_err');}
 else
-$msgId=0;
-$tpl = isset($tpl) ? $tpl : $tpl =  $modx->getOption('tplFormRead', $scriptProperties, 'soc.readForm');;
+{ 
+    $msgID = $_REQUEST['msgID'];
+	$action = $_REQUEST['action'];
+}
 
-$userId = $user->get('id');
-
-$c = $modx->newQuery('socDialogReceive');
-
-$c->where(array(
-
-    'recipient' => $userId,
-	'id' => $msgId
-
-));
-
-$c->sortby('date_sent','DESC');
-$c->limit($offset,$limit);
-
-$messages = $modx->getCollection('socDialogReceive',$c);
-foreach ($messages as $msg){
-
-   $msgarray = $msg->toArray();
-
-     $output .= $modx->getChunk($tpl, $msgarray) . $outputSeparator;
-
-	//$msg->set('read',1);
-
-     $msg->save();
-
+$output = '';
+// switch inbox or outbox
+switch($action)
+{
+    case 'inbox':
+        $tpl =  $modx->getOption('tplFormReadInbox', $scriptProperties, 'soc.readFormInbox');
+        $msg = $modx->getObject('socDialogReceive', array('id' => $msgID, 'recipient' => $user->id ));
+        $msgarray = $msg->toArray();
+		if(!$msg){return $modx->lexicon('socialtools_err');}
+        $output .= $modx->getChunk($tpl, $msgarray);
+        break;
+    case 'outbox':
+        $tpl =  $modx->getOption('tplFormReadOutbox', $scriptProperties, 'soc.readFormOutbox');
+        $msg = $modx->getObject('socDialogSend', array('id' => $msgID, 'sender' => $user->id ));
+		if(!$msg){return $modx->lexicon('socialtools_err');}
+        $msgarray = $msg->toArray();
+        $output .= $modx->getChunk($tpl, $msgarray);
+        break;
+    case 'default':
+        return $modx->lexicon('socialtools_err');
+        break;
 }
 
 return $output;
