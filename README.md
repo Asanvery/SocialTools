@@ -24,9 +24,9 @@ SocialTools -  это компонент с социальным функцио�
 
 
 #### обязательно перед работой нужно исправить чанки по умолчанию
-* ~readMsgResourceID - изменить на ресурс в котором вызывается  сниппетом `` [[!socDialogReceive]] ``
+* ~readMsgResourceID - изменить ссылку на ресурс в котором вызывается  сниппетом `` [[!socDialogReceive]] ``
 
-* ~formSendResourceID - изменить на ресурс со в котором вызывается  сниппетом `` [[!socDialogForm]] ``
+* ~formSendResourceID - изменить ссылку на ресурс в котором вызывается  сниппетом `` [[!socDialogForm]] ``
 
 ## SocialTools 
 SocialTools - a component of the social functionality for CMS / CMF MODX. With it you can send and read messages, get a list of incoming and outgoing messages.
