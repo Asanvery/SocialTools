@@ -1,4 +1,3 @@
-
 #socForm{
 width:95%;
 border-radius: 3px;
@@ -9,6 +8,7 @@ moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
 box-shadow: 0 0 10px rgba(0,0,0,0.2);
 border: 1px solid #b1b1b1;
 }
+
 .social-msgRead{
 border-radius: 3px;
 padding: 15px;
@@ -16,18 +16,23 @@ background-color: #e9e9e9;
 moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
 -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
 box-shadow: 0 0 10px rgba(0,0,0,0.2);
-border: 1px solid #b1b1b1;}
-.btn-toolbar {
-    
-    float:right;
+border: 1px solid #b1b1b1;
 }
+
+.btn-toolbar {float:right;}
+
 .btn-toolbar a{
     display:inline-block;
 }
+
 a{text-decoration:none;}
-.social-box {font-family:Calibri, 'Ubuntu', Arial, Helvetica, sans-serif; font-size:15px; line-height:24px; margin:0px; padding:0px;color:#23323e;}
+.social-box {margin:auto;width:900px;font-family:Calibri, Arial, Helvetica, sans-serif; font-size:15px; line-height:24px; margin:0px; padding:0px;color:#23323e;}
+.soc-photo{display:inline-block;height:32px;}
+.soc-listheader{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;max-width:150px;height:28px;}
+.soc-msgcontent{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;color:#9b9b9b;max-width:400px;height:28px;}
 .paging a{color:#9e373f;}
 .paging a:hover{color:#e4656f;}
+.social-msg{float:left;width:80%;padding:2px;}
 .social-msg a{display:block;background-color:#f8f8f8;padding:6px;border-radius:3px;margin-top:3px;color:black;border:1px solid #b1b1b1;text-decoration:none;height:32px;text-align:left;}
 .social-msg a:hover{background-color:#f8f8f8;
 	moz-box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Äëÿ Firefox */
