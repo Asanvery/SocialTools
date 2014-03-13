@@ -9,7 +9,6 @@ $_lang['socialtools_list_prop_offset'] = 'Пропуск результатов 
 $_lang['socialtools_list_prop_sortby'] = 'Сортировка выборки';
 $_lang['socialtools_list_prop_sortdir'] = 'Направление сортировки';
 $_lang['socialtools_list_prop_action'] = 'Вывод входящих или исходящих сообщений';
-$_lang['socialtools_list_prop_user'] = 'Вывод элементов с этим пользователем';
 $_lang['socialtools_list_prop_outputSeparator'] = 'Разделитель строк';
 $_lang['socialtools_list_prop_totalVar'] = 'Плейсхолдер для общего значения результатов';
 
