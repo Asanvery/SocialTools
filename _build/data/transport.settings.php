@@ -5,7 +5,7 @@ $settings = array();
 $tmp = array(
 	'debug' => array(
 		'xtype' => 'combo-boolean',
-		'value' => true,
+		'value' => false,
 		'area' => 'socialtools_debug',
 	),
 	'notify' => array(
