@@ -15,7 +15,7 @@ SocialTools -  это компонент с социальным функцио�
 
  ``[[!pdoPage?
   &element=`socDialogList` 
-  &action= `outbox` 
+  &action=`outbox` 
 ]]
 ``
 * Для чтения сообщений
