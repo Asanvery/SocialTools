@@ -36,7 +36,7 @@ SocialTools - a component of the social functionality for CMS / CMF MODX. With i
 Create a resource with Snippets ``[[!socDialogForm]]``
 * for a list of incoming messages 
  
- *used in this example pdoPage, you can also use getPage*
+ *this example used pdoPage, you can also use getPage*
  ``[[!pdoPage?
   &element=`socDialogList` 
   &action=`inbox` 
