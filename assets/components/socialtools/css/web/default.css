@@ -89,15 +89,17 @@ border: 1px solid #b1b1b1;
 
 .btn-toolbar {float:right;}
 .btn-toolbar a{display:inline-block;}
+.btn-toolbar a:hover{color:white;}
 
 a{text-decoration:none;}
+
 .social-container {margin:auto;width:900px;font-family:Calibri, Arial, Helvetica, sans-serif; font-size:15px; line-height:24px; margin:0px; padding:0px;color:#23323e;}
 .social-photo{display:inline-block;height:32px;}
 .social-listheader{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;max-width:150px;height:28px;}
 .social-msgcontent{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;max-width:400px;height:28px;color:#9b9b9b;}
 .paging a{color:#9e373f;}
 .paging a:hover{color:#e4656f;}
-.social-msg{float:left;width:80%;padding:2px;}
+.social-msg{float:left;width:80%;padding:2px;height:50px;}
 .social-msg a{display:block;background-color:#f8f8f8;padding:6px;border-radius:3px;margin-top:3px;color:black;border:1px solid #b1b1b1;text-decoration:none;height:32px;text-align:left;}
 .social-msg a:hover{background-color:#f8f8f8;
 	moz-box-shadow: 0 0 10px rgba(0,0,0,0.2); 
