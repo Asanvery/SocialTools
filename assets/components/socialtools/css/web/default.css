@@ -1,3 +1,4 @@
+/* soc Form*/
 #socForm{
 width:95%;
 border-radius: 3px;
@@ -8,55 +9,7 @@ moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
 box-shadow: 0 0 10px rgba(0,0,0,0.2);
 border: 1px solid #b1b1b1;
 }
-
-.social-msgRead{
-border-radius: 3px;
-padding: 15px;
-background-color: #e9e9e9;
-moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
--webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
-box-shadow: 0 0 10px rgba(0,0,0,0.2);
-border: 1px solid #b1b1b1;
-}
-.social-msgReadContent{display:block;white-space: pre-wrap;word-wrap: break-word;overflow: hidden;}
-
-.btn-toolbar {float:right;}
-.btn-toolbar a{display:inline-block;}
-
-a{text-decoration:none;}
-.social-container {margin:auto;width:900px;font-family:Calibri, Arial, Helvetica, sans-serif; font-size:15px; line-height:24px; margin:0px; padding:0px;color:#23323e;}
-.social-photo{display:inline-block;height:32px;}
-.social-listheader{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;max-width:150px;height:28px;}
-.social-msgcontent{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;max-width:400px;height:28px;color:#9b9b9b;}
-.paging a{color:#9e373f;}
-.paging a:hover{color:#e4656f;}
-.social-msg{float:left;width:80%;padding:2px;}
-.social-msg a{display:block;background-color:#f8f8f8;padding:6px;border-radius:3px;margin-top:3px;color:black;border:1px solid #b1b1b1;text-decoration:none;height:32px;text-align:left;}
-.social-msg a:hover{background-color:#f8f8f8;
-	moz-box-shadow: 0 0 10px rgba(0,0,0,0.2); 
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2); 
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-.unread_mess a{font-weight:bold;background-color:#e9e9e9;}
-.unread_mess a:hover{font-weight:bold;background-color:#ededed;}
-.badge_msg {
-  display: inline-block;
-  padding: 2px 4px;
-  padding-right: 9px;
-  padding-left: 9px;
-  font-size: 11.844px;
-  font-weight: bold;
-  line-height: 14px;
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  white-space: nowrap;
-  vertical-align: baseline;
-  background-color: #b94a48;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-}
-.socFormInput{display: block;
+socFormInput{display: block;
   width: 95%;
   height: 34px;
   padding: 6px 12px;
@@ -122,6 +75,55 @@ a{text-decoration:none;}
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
+/*soc List, and recieve and unread message*/ 
+.social-msgRead{
+border-radius: 3px;
+padding: 15px;
+background-color: #e9e9e9;
+moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+border: 1px solid #b1b1b1;
+}
+.social-msgReadContent{display:block;white-space: pre-wrap;word-wrap: break-word;overflow: hidden;}
+
+.btn-toolbar {float:right;}
+.btn-toolbar a{display:inline-block;}
+
+a{text-decoration:none;}
+.social-container {margin:auto;width:900px;font-family:Calibri, Arial, Helvetica, sans-serif; font-size:15px; line-height:24px; margin:0px; padding:0px;color:#23323e;}
+.social-photo{display:inline-block;height:32px;}
+.social-listheader{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;max-width:150px;height:28px;}
+.social-msgcontent{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;max-width:400px;height:28px;color:#9b9b9b;}
+.paging a{color:#9e373f;}
+.paging a:hover{color:#e4656f;}
+.social-msg{float:left;width:80%;padding:2px;}
+.social-msg a{display:block;background-color:#f8f8f8;padding:6px;border-radius:3px;margin-top:3px;color:black;border:1px solid #b1b1b1;text-decoration:none;height:32px;text-align:left;}
+.social-msg a:hover{background-color:#f8f8f8;
+	moz-box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.unread_mess a{font-weight:bold;background-color:#e9e9e9;}
+.unread_mess a:hover{font-weight:bold;background-color:#ededed;}
+.badge_msg {
+  display: inline-block;
+  padding: 2px 4px;
+  padding-right: 9px;
+  padding-left: 9px;
+  font-size: 11.844px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #b94a48;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.
 
 
 
