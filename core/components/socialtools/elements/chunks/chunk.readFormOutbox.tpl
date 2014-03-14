@@ -13,8 +13,8 @@
 </div>
 
 <div class="btn-toolbar" style='float:right'>
-    <a class="socFormButton"  href="[[~formSendResourceID? &msgID=`[[+id]]`  &recipient=`[[+sender]]`]]"   >ответить</a>
-    <a class="socFormButton"  onclick="SocialTools.dialog.delete([[+id]],'inbox', this, '#socDivMsg[[+id]]');"   >удалить</a>
+    <a class="socFormButton"  href="[[~formSendResourceID? &msgID=`[[+id]]`  &recipient=`[[+sender]]`]]"   >[[%socialtools_form_button_answer]]</a>
+    <a class="socFormButton"  onclick="SocialTools.dialog.delete([[+id]],'inbox', this, '#socDivMsg[[+id]]');"   >[[%socialtools_form_button_delete]]</a>
 </div>
 
 <div id="socDivReply"></div>

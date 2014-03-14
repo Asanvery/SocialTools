@@ -15,8 +15,8 @@
  </a>
 </div>
     <div class="btn-toolbar ">
-    <a href="[[~formSendResourceID? &msgID=`[[+id]]`  &recipient=`[[+recipient]]`]]" class="socFormButton"  >ответить</a>
-             <a class="socFormButton"  onclick="SocialTools.dialog.delete([[+id]],'outbox', this, '#socDivMsg[[+id]]');"   >удалить</a>
+    <a href="[[~formSendResourceID? &msgID=`[[+id]]`  &recipient=`[[+recipient]]`]]" class="socFormButton"  >[[%socialtools_form_button_answer]]</a>
+             <a class="socFormButton"  onclick="SocialTools.dialog.delete([[+id]],'outbox', this, '#socDivMsg[[+id]]');"   >[[%socialtools_form_button_delete]]</a>
            
     </div>
     <div style="clear:both"></div>
