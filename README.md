@@ -23,7 +23,7 @@ SocialTools -  это компонент с социальным функцио�
   `` [[!socDialogReceive]] `` 
 
 
-#### обязательно перед работой нужно исправить чанки по умолчанию
+#### Обязательно перед работой нужно исправить чанки по умолчанию
 * ~readMsgResourceID - изменить идентификатор на ресурс в котором вызывается  сниппетом `` [[!socDialogReceive]] ``
 
 * ~formSendResourceID - изменить идентификатор на ресурс в котором вызывается  сниппетом `` [[!socDialogForm]] ``
@@ -54,7 +54,7 @@ Create a resource with Snippets ``[[!socDialogForm]]``
   `` [[!socDialogReceive]] `` 
 
 
-#### necessarily need to be corrected before work chunks default
+#### Necessarily need to be corrected before work chunks default
 * ~readMsgResourceID - change the resource identifier where calls snippet `` [[!socDialogReceive]] ``
 
 * ~formSendResourceID - change the resource identifier where calls snippet `` [[!socDialogForm]] ``
