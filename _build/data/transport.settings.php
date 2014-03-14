@@ -9,7 +9,7 @@ $tmp = array(
 		'area' => 'socialtools_debug',
 	),
 	'frontend_css' => array(
-		'value' => '/assets/components/socialtools/css/web/default.css',
+		'value' => 'assets/components/socialtools/css/web/default.css',
 		'xtype' => 'textfield',
 		'area' => 'socialtools_main',
 	),
