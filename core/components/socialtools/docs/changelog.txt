@@ -1,4 +1,8 @@
 Changelog for SocialTools.
+SocialTools 0.2.2
+==============
+- add style notification for jgrowl
+
 
 SocialTools 0.2.1
 ==============
