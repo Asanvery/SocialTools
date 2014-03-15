@@ -9,7 +9,7 @@ moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
 box-shadow: 0 0 10px rgba(0,0,0,0.2);
 border: 1px solid #b1b1b1;
 }
-socFormInput{display: block;
+.socFormInput{display: block;
   width: 95%;
   height: 34px;
   padding: 6px 12px;
