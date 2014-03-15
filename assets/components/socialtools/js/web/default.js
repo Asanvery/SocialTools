@@ -80,7 +80,7 @@ SocialTools.Notify = {
 						alertify.success(message);
 						break;
 					case 'jgrowl':
-						$.jGrowl(message);
+						$.jGrowl(message, {theme: 'socialtools-message-success'});
 						break;
 					case 'default':
 						alertify.set({ delay: 5000 });
@@ -98,7 +98,7 @@ SocialTools.Notify = {
 						alertify.error(message);
 						break;
 					case 'jgrowl':
-						$.jGrowl(message);
+						$.jGrowl(message, {theme: 'socialtools-message-error'});
 						break;
 					case 'default':
 						alertify.set({ delay: 5000 });
@@ -116,7 +116,7 @@ SocialTools.Notify = {
 						alertify.log(message);
 						break;
 					case 'jgrowl':
-						$.jGrowl(message);
+						$.jGrowl(message, {theme: 'socialtools-message-info'});
 						break;
 					case 'default':
 						alertify.set({ delay: 5000 });
