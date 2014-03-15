@@ -1,32 +1,76 @@
 ## SocialTools 
 SocialTools -  это компонент с социальным функционалом для CMS / CMF MODX. С помощью него можно отправлять и читать сообщения, получать списки входящих и исходящих сообщений.
-### Примеры
-* Для отправления сообщения cоздайте ресурс со снипетом ``[[!socDialogForm]]``
+###5 шагов  для быстрой работы с ним:###
 
-* для списка входящих сообщения 
- 
- *в данном примере используется pdoPage, вы также можете использовать getPage*
- ``[[!pdoPage?
-  &element=`socDialogList` 
-  &action=`inbox` 
+*1. Создать ресурс с формой отправки сообщений.*
+
+ ```
+<div class="social-container">[[!socDialogForm]]</div>
+```
+*2. Создать ресурс со списком входящих сообщений.*
+
+**_данном примере используется pdoPage, вы можете использывать getPage_**
+
+```
+<div class="social-container">
+[[!pdoPage?
+  &element=`socDialogList`
+  &action=`inbox`
 ]]
-``
-* для списка исходящих сообщения
 
- ``[[!pdoPage?
-  &element=`socDialogList` 
-  &action=`outbox` 
+<div class="paging">
+<ul class="pagination">
+  [[+page.nav]]
+</ul>
+</div>
+
+</div>
+
+```
+
+*3. Создать ресурс со списком исходящих сообщений.*
+
+
+**_данном примере используется pdoPage, вы можете использывать getPage_**
+
+```
+<div class="social-container">
+[[!pdoPage?
+  &element=`socDialogList`
+  &action=`outbox`
 ]]
-``
-* Для чтения сообщений
 
-  `` [[!socDialogReceive]] `` 
+<div class="paging">
+<ul class="pagination">
+  [[+page.nav]]
+</ul>
+</div>
 
+</div>
 
-#### Обязательно перед работой нужно исправить чанки по умолчанию
-* ~readMsgResourceID - изменить идентификатор на ресурс в котором вызывается  сниппетом `` [[!socDialogReceive]] ``
+```
 
-* ~formSendResourceID - изменить идентификатор на ресурс в котором вызывается  сниппетом `` [[!socDialogForm]] ``
+*4. Вызов сниппета для чтения сообщений*
+
+```
+<div class="social-container">[[!socDialogReceive]]</div>
+```
+
+*5. Сделать правки в чанках по умолчанию.*
+Изменить readMsgResourceID - на id вышего ресурса с вызовом сниппета для чтения сообщений.
+Изменить formSendResourceID - на id вышего ресурса с вызовом сниппета для формы отправки сообщения.
+
+###Рекомендации, дополнения###
+*1*. Установить компонент dateAgo, и phpthumbon для приятного отображения даты отправки сообщения и аватара пользователя в чанках.
+
+*2*. Вывод плейсхолдера непрочитанных сообщений по умолчанию ``` [[!+socIsRead:notempty=`<span class='badge_msg'>[[!+socIsRead]]</span>`]] ``` 
+
+*3*. Заключать все вызовы в div с классом social-container, у этого класса фиксированая ширина, с помощью него вы легко сможете настроить ширину под свой сайт в CSS
+
+*5*. Полезные классы в CSS social-listheader , social-msgcontent - параметр max-width, определяет максимальную ширину этих полей все что больше будет обрезаться и ставиться многоточие.
+Они используется для отображения списка сообщения. Если вы изминяете параметры класса social-container, то эти значения так же нужно настроить под ваш CSS.
+
+<a rel="fancybox" href="http://st.bezumkin.ru/files/c/2/c/c2ca21272e774ac13d6c9d7bcaaa9bc1.jpg">[![](http://st.bezumkin.ru/files/c/2/c/c2ca21272e774ac13d6c9d7bcaaa9bc1s.jpg)](http://st.bezumkin.ru/files/c/2/c/c2ca21272e774ac13d6c9d7bcaaa9bc1.jpg
 
 ## SocialTools 
 SocialTools - a component of the social functionality for CMS / CMF MODX. With it you can send and read messages, get a list of incoming and outgoing messages.
