@@ -71,6 +71,7 @@ _рабочия и установленная версия находиться 
 _<a href='http://store.simpledream.ru/packages/utilities/dateago.html'>dateAgo</a>_
 
 _<a href='http://modx.com/extras/package/phpthumbon'>phpthumbon</a>_
+
 *2*. Вывод плейсхолдера непрочитанных сообщений по умолчанию ``` [[!+socIsRead:notempty=`<span class='badge_msg'>[[!+socIsRead]]</span>`]] ``` 
 
 *3*. Заключать все вызовы в div с классом social-container, у этого класса фиксированая ширина, с помощью него вы легко сможете настроить ширину под свой сайт в CSS
