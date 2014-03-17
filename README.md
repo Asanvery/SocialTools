@@ -79,7 +79,7 @@ _рабочия и установленная версия находиться 
 *5*. Полезные классы в CSS social-listheader , social-msgcontent - параметр max-width, определяет максимальную ширину этих полей, все что больше будет обрезаться и ставиться многоточие.
 Они используется для отображения списка сообщениий. Если вы изменяете параметры класса social-container, то значения в social-listheader , social-msgcontent так же нужно настроить под ваш CSS.
 
-(http://st.bezumkin.ru/files/c/2/c/c2ca21272e774ac13d6c9d7bcaaa9bc1s.jpg)](http://st.bezumkin.ru/files/c/2/c/c2ca21272e774ac13d6c9d7bcaaa9bc1.jpg)
+[![](http://st.bezumkin.ru/files/c/2/c/c2ca21272e774ac13d6c9d7bcaaa9bc1s.jpg)](http://st.bezumkin.ru/files/c/2/c/c2ca21272e774ac13d6c9d7bcaaa9bc1.jpg
 
 ## SocialTools 
 SocialTools - a component of the social functionality for CMS / CMF MODX. With it you can send and read messages, get a list of incoming and outgoing messages.
