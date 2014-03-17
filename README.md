@@ -66,11 +66,11 @@ _рабочия и установленная версия находиться 
 Изменить formSendResourceID - на id вышего ресурса с вызовом сниппета для формы отправки сообщения.
 
 ###Рекомендации, дополнения###
-*1*. Установить компоненты dateAgo, и phpthumbon для приятного отображения даты отправки сообщения и аватара пользователя в чанках.
+*1*. Установить компоненты _<a href='http://store.simpledream.ru/packages/utilities/dateago.html'>dateAgo</a>_, и _<a href='http://modx.com/extras/package/phpthumbon'>phpthumbon</a>_ для приятного отображения даты отправки сообщения и аватара пользователя в чанках.
 
-_<a href='http://store.simpledream.ru/packages/utilities/dateago.html'>dateAgo</a>_
 
-_<a href='http://modx.com/extras/package/phpthumbon'>phpthumbon</a>_
+
+
 
 *2*. Вывод плейсхолдера непрочитанных сообщений по умолчанию ``` [[!+socIsRead:notempty=`<span class='badge_msg'>[[!+socIsRead]]</span>`]] ``` 
 
