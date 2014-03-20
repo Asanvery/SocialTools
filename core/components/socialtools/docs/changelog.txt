@@ -1,4 +1,9 @@
 Changelog for SocialTools.
+SocialTools 0.2.3
+==============
+- fix path to css in system option, and default css.
+- fix some mirror bug
+
 SocialTools 0.2.2
 ==============
 - add style notification for jgrowl
