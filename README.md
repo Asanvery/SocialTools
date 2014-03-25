@@ -71,7 +71,7 @@ SocialTools -  это компонент с социальным функцио�
 
 
 
-*2*. Вывод плейсхолдера непрочитанных сообщений по умолчанию ``` [[!+socIsRead:notempty=`<span class='badge_msg'>[[!+socIsRead]]</span>`]] ``` 
+*2*. Вывод плейсхолдера непрочитанных сообщений по умолчанию ``` [[!+socIsRead:notempty=`Новые сообщения! ([[!+socIsRead]])`]] ``` 
 
 *3*. Заключать все вызовы в div с классом social-container, у этого класса фиксированая ширина, с помощью него вы легко сможете настроить ширину под свой сайт в CSS
 
@@ -149,7 +149,7 @@ Change formSendResourceID - the id of the resource to call your snippet to send 
 ###Recommendations, additions###
 *1*. Install package _<a href='http://store.simpledream.ru/packages/utilities/dateago.html'>dateAgo</a>_, and  _<a href='http://modx.com/extras/package/phpthumbon'>phpthumbon</a>_ for beautiful visualisation date of sent and avatar user in chunks.
 
-*2*. Placeholder for unread message by default  ``` [[!+socIsRead:notempty=`<span class='badge_msg'>[[!+socIsRead]]</span>`]] ``` 
+*2*. Placeholder for unread message by default  ``` [[!+socIsRead:notempty=`New messages ([[!+socIsRead]])`]] ``` 
 
 *3*. To conclude all calls in div with the class 'social-container', at this class the fixed width, by means of it you will be able easily to adjust width under the site in CSS
 
