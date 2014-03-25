@@ -155,6 +155,6 @@ Change formSendResourceID - the id of the resource to call your snippet to send 
 
 *4*. Useful classes in CSS 'social-listheader', 'social-msgcontent' - the 'max-width' parameter, determines the maximum width of this field, all that more dots will be cut off and put. They it is used for display of the list of soobshcheniiya. If you change class social-container parameters, values in social-listheader, social-msgcontent as it is necessary to adjust under your CSS.
 
-![](http://st.bezumkin.ru/files/c/2/c/c2ca21272e774ac13d6c9d7bcaaa9bc1s.jpg) http://st.bezumkin.ru/files/c/2/c/c2ca21272e774ac13d6c9d7bcaaa9bc1.jpg
+[![](http://st.bezumkin.ru/files/c/2/c/c2ca21272e774ac13d6c9d7bcaaa9bc1s.jpg)] (http://st.bezumkin.ru/files/c/2/c/c2ca21272e774ac13d6c9d7bcaaa9bc1.jpg)
 
 _You can always make your chunks, with its own CSS, based on the default chunks_
