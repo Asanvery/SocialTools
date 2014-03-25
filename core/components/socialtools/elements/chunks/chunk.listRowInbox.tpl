@@ -10,7 +10,7 @@
 <div  class="social-msgcontent">
 [[+message]]
 </div>
-<!--  for best view date_sent you can use dateAgo extra from Vasiliy Naumkin  // exmaple [[+date_sent:dateAgo]] -->
+<!--  for best view date_sent you can use extra dateAgo from Vasiliy Naumkin  // exmaple [[+date_sent:dateAgo]] -->
  <small style='float:right'>[[+date_sent]]</small> 
  </a>
 </div>
