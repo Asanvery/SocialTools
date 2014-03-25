@@ -2,9 +2,7 @@
 $socialTools = $modx->getService('SocialTools','SocialTools',$modx->getOption('core_path').'components/socialtools/'.'model/socialtools/',$scriptProperties);
 $socialTools->initialize($modx->context->key, $scriptProperties);
 
-if (!$modx->user->isAuthenticated($modx->context->key)) {
-	return $modx->lexicon('socialtools_err_noauth');
-}
+if(!$user = $modx->getAuthenticatedUser()){return $modx->lexicon('socialtools_err_noauth');}
 
 $tpl = $scriptProperties['tplFormCreate'];
 $data = array();

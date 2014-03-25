@@ -1,11 +1,8 @@
 <?php
-if(!$user = $modx->getAuthenticatedUser()){return $modx->lexicon('socialtools_err_noauth');}
-
 $socialTools = $modx->getService('SocialTools','SocialTools',$modx->getOption('core_path').'components/socialtools/'.'model/socialtools/',$scriptProperties);
 $socialTools->initialize($modx->context->key, $scriptProperties);
-//$modx->setLogLevel(xPDO::LOG_LEVEL_INFO);
-//$modx->setLogTarget('ECHO');
 
+if(!$user = $modx->getAuthenticatedUser()){return $modx->lexicon('socialtools_err_noauth');}
 
 // switch inbox or outbox
 switch($action)

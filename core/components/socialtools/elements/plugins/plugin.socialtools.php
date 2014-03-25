@@ -7,8 +7,7 @@ switch ($modx->event->name) {
 		break;
     case 'OnWebPageInit':
         if(!$user = $modx->getAuthenticatedUser()){return;}
-        $socialTools = $modx->getService('SocialTools','SocialTools',$modx->getOption('core_path').'components/socialtools/'.'model/socialtools/',$scriptProperties);
-
+        $socialTools = $modx->getService('SocialTools','SocialTools', MODX_CORE_PATH.'components/socialtools/model/socialtools/',$scriptProperties);
         if(!empty($_REQUEST['msgID']) && $_REQUEST['action']=='inbox')
         {
             $msg_inbox = $modx->getObject('socDialogReceive',array('recipient' => $user->id, 'id' => $_REQUEST['msgID']));
