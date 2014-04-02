@@ -11,8 +11,6 @@ if ($object->xpdo) {
 
 			$manager = $modx->getManager();
 			$objects = array(
-				'socDialogReceive',
-				'socDialogSend',
 				'socMessage'
 			);
 			foreach ($objects as $tmp) {
