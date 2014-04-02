@@ -2,9 +2,9 @@
 /**
  * Create an Item
  */
-class socDialogSendRemoveProcessor extends modObjectRemoveProcessor {
-	public $objectType = 'socDialogSend';
-	public $classKey = 'socDialogSend';
+class socMessageUpdateProcessor extends modObjectUpdateProcessor {
+	public $objectType = 'socMessage';
+	public $classKey = 'socMessage';
 	public $languageTopics = array('socialtools');
 	
 	public function beforeSet() {
@@ -20,4 +20,4 @@ class socDialogSendRemoveProcessor extends modObjectRemoveProcessor {
 	}
 }
 
-return 'socDialogSendRemoveProcessor';
+return 'socMessageUpdateProcessor';

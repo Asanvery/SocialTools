@@ -2,10 +2,11 @@
 /**
  * Create an Item
  */
-class socDialogReciveRemoveProcessor extends modObjectRemoveProcessor {
-	public $objectType = 'socDialogReceive';
-	public $classKey = 'socDialogReceive';
+class socMessageRemoveProcessor extends modObjectRemoveProcessor {
+	public $objectType = 'socMessage';
+	public $classKey = 'socMessage';
 	public $languageTopics = array('socialtools');
+	
 	public function beforeSet() {
 		
 		/*$this->setProperties(array(
@@ -19,4 +20,4 @@ class socDialogReciveRemoveProcessor extends modObjectRemoveProcessor {
 	}
 }
 
-return 'socDialogReciveRemoveProcessor';
+return 'socMessageRemoveProcessor';
