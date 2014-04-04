@@ -119,28 +119,29 @@ class SocialTools {
 	}
 	
 	// Message send 
-	public function sendMsg($data = array()) {
+	public function SendMessage($data = array()) {
 		$data['sender']  = $this->modx->user->id;
 		
 		// validate empty data
-		if(empty($data['recipient'])) {return $this->error($this->modx->lexicon('socialtools_dialogSend_err_recipient'));}
-		if(empty($data['message'])) {return $this->error($this->modx->lexicon('socialtools_dialogSend_err_msg'));}
+		if(empty($data['recipient'])) {return $this->error($this->modx->lexicon('socialtools_socMessage_err_recipient'));}
+		if(empty($data['message'])) {return $this->error($this->modx->lexicon('socialtools_socMessage_err_msg'));}
 		
 		// get id recipient 
 		$objRecipient = $this->modx->getObject('modUser',array('username' => $data['recipient']));
 		if ($objRecipient) {
 			$data['recipient'] = $objRecipient->get('id');
 		}
-		else {return $this->error($this->modx->lexicon('socialtools_dialogSend_err_recipientFind',array('username' => $data['recipient'])));}
+		else {return $this->error($this->modx->lexicon('socialtools_socMessage_err_recipientFind',array('username' => $data['recipient'])));}
 		
 		// validate user not send self, and debug mode
 		if($this->modx->getOption('socialtools.debug')== false && $data['sender'] == $data['recipient'])
-			{return $this->error($this->modx->lexicon('socialtools_dialogSend_err_msgSelf'));}
+			{return $this->error($this->modx->lexicon('socialtools_socMessage_err_msgSelf'));}
 		
 		// create inbox message for recipient
 		
 		$data['date_sent'] = date('Y-m-d H:i:s');
-		$response = $this->runProcessor('web/dialogsend/create', $data);
+		$response = $this->runProcessor('web/socmessage/create', $data);
+			
 		if ($response->isError()) {
 			$message = $response->getMessage();
 			$tmp = $response->getFieldErrors();
@@ -150,27 +151,16 @@ class SocialTools {
 				}
 			return $this->error($message, $errors);
 		}
-		// create outbox message for sender
-		$response = $this->runProcessor('web/dialogreceive/create', $data);
-		if ($response->isError()) {
-			$message = $response->getMessage();
-			$tmp = $response->getFieldErrors();
-			$errors = array();
-				foreach ($tmp as $v) {
-					$errors[$v->field] = $v->message;
-				}
-			return $this->error($message, $errors);
-		}
-		// if no error return success
-		if (empty($message)) {$message = $this->modx->lexicon('socialtools_dialogSend_success');}
+		if (empty($message)) {$message = $this->modx->lexicon('socialtools_socMessage_success');}
 			return $this->success($message);
 	}
 
 	
-	// delete Inbox msg
-	public function deleteInboxMsg($data = array()) {
-		if(!$this->modx->user->id){return $this->error($this->modx->lexicon('socialtools_dialog_error_remove'));}
-		$response = $this->runProcessor('web/dialogreceive/remove', $data);
+	// Message delete
+	public function DeleteMessage($data = array()) {
+		if(!$this->modx->user->id){return $this->error($this->modx->lexicon('socialtools_socMessage_error_delete'));}
+		
+		//$response = $this->runProcessor('web/socmessage/update', $data);
 		if ($response->isError()) {
 			$message = $response->getMessage();
 			$tmp = $response->getFieldErrors();
@@ -180,26 +170,11 @@ class SocialTools {
 				}
 			return $this->error($message, $errors);
 		}
-			if (empty($message)) {$message = $this->modx->lexicon('socialtools_dialog_delete');}
+			if (empty($message)) {$message = $this->modx->lexicon('socialtools_socMessage_delete');}
 			return $this->success($message);
 	}
 	
-		// delete Outbox msg
-	public function deleteOutboxMsg($data = array()) {
-	if(!$this->modx->user->id){return $this->error($this->modx->lexicon('socialtools_dialog_error_remove'));}
-		$response = $this->runProcessor('web/dialogsend/remove', $data);
-		if ($response->isError()) {
-			$message = $response->getMessage();
-			$tmp = $response->getFieldErrors();
-			$errors = array();
-				foreach ($tmp as $v) {
-					$errors[$v->field] = $v->message;
-				}
-			return $this->error($message, $errors);
-		}
-			if (empty($message)) {$message = $this->modx->lexicon('socialtools_dialog_delete');}
-			return $this->success($message);
-	}
+
 	
 	/**
 	 * Gets a Chunk and caches it; also falls back to file-based templates

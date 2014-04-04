@@ -1,4 +1,10 @@
 Changelog for SocialTools.
+
+SocialTools 0.3.0
+==============
+- merge from 2 tables to 1 messages, patch class and proccesors
+
+
 SocialTools 0.2.3
 ==============
 - fix path to css in system option, and default css.
