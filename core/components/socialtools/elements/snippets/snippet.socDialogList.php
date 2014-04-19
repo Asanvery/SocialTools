@@ -9,11 +9,11 @@ $c = $modx->newQuery('socMessage');
 switch($action)
 {
     case 'inbox':
-        $c->where(array('recipient' => $user->id));
+        $c->where(array('recipient' => $user->id, 'recipient_deleted' => 0));
         $tpl =  $modx->getOption('inboxTpl', $scriptProperties, 'soc.listRowInbox');
         break;
     case 'outbox':
-        $c->where(array('sender' => $user->id));
+        $c->where(array('sender' => $user->id, 'sender_deleted' => 0));
         $tpl =  $modx->getOption('outboxTpl', $scriptProperties, 'soc.listRowOutbox');
         break;
     case 'default':

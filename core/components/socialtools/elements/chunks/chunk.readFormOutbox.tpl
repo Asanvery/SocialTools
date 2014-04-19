@@ -1,4 +1,4 @@
-<div id="socDivMsg">
+<div id="socDivMsg[[+id]]">
 <div  class="social-msgRead" >
 
 <table width='100%' style='border-bottom:1px solid #d1d1d1'>
@@ -14,6 +14,6 @@
 
 <div class="btn-toolbar" style='float:right'>
     <a class="socFormButton"  href="[[~3? &msgID=`[[+id]]`  &recipient=`[[+sender]]`]]"   >[[%socialtools_form_button_answer]]</a>
-    <a class="socFormButton"  onclick="SocialTools.message.delete([[+id]],'inbox', this);"   >[[%socialtools_form_button_delete]]</a>
+    <a class="socFormButton"  onclick="SocialTools.message.delete([[+id]],'outbox', socDivMsg[[+id]]);"   >[[%socialtools_form_button_delete]]</a>
 </div>
 </div>

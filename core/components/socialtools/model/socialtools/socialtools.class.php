@@ -118,8 +118,9 @@ class SocialTools {
 		return $this->modx->runProcessor($action, $data, array('processors_path' => $this->config['processorsPath']));
 	}
 	
-	// Message send 
+	// Send message  
 	public function SendMessage($data = array()) {
+		
 		$data['sender']  = $this->modx->user->id;
 		
 		// validate empty data
@@ -131,13 +132,13 @@ class SocialTools {
 		if ($objRecipient) {
 			$data['recipient'] = $objRecipient->get('id');
 		}
-		else {return $this->error($this->modx->lexicon('socialtools_socMessage_err_recipientFind',array('username' => $data['recipient'])));}
+		else {
+			return $this->error($this->modx->lexicon('socialtools_socMessage_err_recipientFind',array('username' => $data['recipient'])));
+		}
 		
 		// validate user not send self, and debug mode
 		if($this->modx->getOption('socialtools.debug')== false && $data['sender'] == $data['recipient'])
 			{return $this->error($this->modx->lexicon('socialtools_socMessage_err_msgSelf'));}
-		
-		// create inbox message for recipient
 		
 		$data['date_sent'] = date('Y-m-d H:i:s');
 		$response = $this->runProcessor('web/socmessage/create', $data);
@@ -156,11 +157,11 @@ class SocialTools {
 	}
 
 	
-	// Message delete
+	// Delete message
 	public function DeleteMessage($data = array()) {
 		if(!$this->modx->user->id){return $this->error($this->modx->lexicon('socialtools_socMessage_error_delete'));}
-		
-		//$response = $this->runProcessor('web/socmessage/update', $data);
+
+		$response = $this->runProcessor('web/socmessage/update', $data);
 		if ($response->isError()) {
 			$message = $response->getMessage();
 			$tmp = $response->getFieldErrors();
@@ -234,7 +235,7 @@ class SocialTools {
 		return $chunk;
 	}
     
-	/* This method returns an error of the cart
+	/* This method returns an error 
 	 *
 	 * @param string $message A lexicon key for error message
 	 * @param array $data.Additional data, for example cart status
@@ -253,7 +254,7 @@ class SocialTools {
 	}
 
 
-	/* This method returns an success of the cart
+	/* This method returns an success
 	 *
 	 * @param string $message A lexicon key for success message
 	 * @param array $data.Additional data, for example cart status

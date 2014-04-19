@@ -10,6 +10,7 @@ $_lang['socialtools_err'] = 'Ошибка';
 // socDialog lexicon
 $_lang['socialtools_socMessage_delete'] = 'Сообщение удалено';
 $_lang['socialtools_socMessage_error_delete'] = 'Ошибка удаления';
+$_lang['socialtools_socMessage_error_permission'] = 'Недостаточно прав доступа';
 // socDialogSend lexicon
 $_lang['socialtools_socMessage_success'] = 'Сообщение отправлено';
 $_lang['socialtools_socMessage_error'] = 'Ошибка';
