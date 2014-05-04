@@ -15,7 +15,10 @@ class socMessageUpdateProcessor extends modObjectUpdateProcessor {
 					return $this->modx->lexicon('socialtools_socMessage_error_permission');
 				}
 				else
-					$this->setProperties(array('recipient_deleted' => '1'));
+					{
+						$this->object->set('is_read', 1);
+						$this->setProperties(array('recipient_deleted' => '1'));
+				}
 			break;
 			case 'outbox':
 				if ($this->object->get('sender') != $this->modx->user->id) {
