@@ -22,13 +22,14 @@ SocialTools = {
 		
 		
 	},
-	dialog: {
+	message: {
 		send: function(form,button) {
 			$(form).ajaxSubmit({
-				data: {action: 'dialog/send'}
+				data: {action: 'message/send'}
 				,url: SocialToolsConfig.actionUrl
 				,form: form
 				,button: button
+				,type:'POST'
 				,clearForm: false
 				,dataType: 'json'
 				,beforeSubmit: function() {
@@ -48,9 +49,9 @@ SocialTools = {
 				}
 			});
 		},
-		delete: function(id,type,button,socdiv) {
+		delete: function(id,type,socdiv) {
 			$.ajax({
-				data: {action: 'dialog/'+type+'/delete',id: id}
+				data: {action: 'message/delete',id: id, type: type}
 				,url: SocialToolsConfig.actionUrl
 				,dataType: 'json'
 				,type:'POST'

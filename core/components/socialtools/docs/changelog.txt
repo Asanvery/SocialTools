@@ -1,4 +1,14 @@
 Changelog for SocialTools.
+
+SocialTools 0.3.0
+==============
+English
+- IMPORTANT! not compatible with the previous version, remove the old and install the new version
+- merge from 2 tables to 1 messages, patch class and proccesors  
+Russian
+- ВАЖНО! не совместимо с предыдущей версией, удалите старую и установите новую версию
+- Соединения таблиц сообщений в 1, переписаны классы и процессоры. 
+
 SocialTools 0.2.3
 ==============
 - fix path to css in system option, and default css.

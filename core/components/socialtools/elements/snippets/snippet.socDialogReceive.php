@@ -11,20 +11,21 @@ else
 	$action = $_REQUEST['action'];
 }
 
+
 $output = '';
 // switch inbox or outbox
 switch($action)
 {
     case 'inbox':
         $tpl =  $modx->getOption('tplFormReadInbox', $scriptProperties, 'soc.readFormInbox');
-        $msg = $modx->getObject('socDialogReceive', array('id' => $msgID, 'recipient' => $user->id ));
+        $msg = $modx->getObject('socMessage', array('id' => $msgID, 'recipient' => $user->id ));
         $msgarray = $msg->toArray();
 		if(!$msg){return $modx->lexicon('socialtools_err');}
         $output .= $modx->getChunk($tpl, $msgarray);
         break;
     case 'outbox':
         $tpl =  $modx->getOption('tplFormReadOutbox', $scriptProperties, 'soc.readFormOutbox');
-        $msg = $modx->getObject('socDialogSend', array('id' => $msgID, 'sender' => $user->id ));
+        $msg = $modx->getObject('socMessage', array('id' => $msgID, 'sender' => $user->id ));
 		if(!$msg){return $modx->lexicon('socialtools_err');}
         $msgarray = $msg->toArray();
         $output .= $modx->getChunk($tpl, $msgarray);

@@ -33,15 +33,13 @@ $socialTools = $modx->getService('SocialTools','SocialTools',$modx->getOption('c
 if($modx->error->hasError() || !($socialTools instanceof socialTools)) {die('Error');}
 
 switch ($action) {
-	case 'dialog/send': 
-	$response = $socialTools->sendMsg($_POST); 
+	case 'message/send': 
+	$response = $socialTools->SendMessage($_POST); 
 	break;
-	case 'dialog/inbox/delete': 
-	$response = $socialTools->deleteInboxMsg($_POST); 
+	case 'message/delete': 
+	$response = $socialTools->DeleteMessage($_POST); 
 	break;
-	case 'dialog/outbox/delete': 
-	$response = $socialTools->deleteOutboxMsg($_POST); 
-	break;
+
 }
 
 if (is_array($response)) {

@@ -1,8 +1,8 @@
 <?php
-$xpdo_meta_map['socDialogSend']= array (
+$xpdo_meta_map['socMessage']= array (
   'package' => 'socialtools',
   'version' => '1.1',
-  'table' => 'soc_dialogSend',
+  'table' => 'soc_messages',
   'extends' => 'xPDOSimpleObject',
   'fields' => 
   array (
@@ -10,9 +10,13 @@ $xpdo_meta_map['socDialogSend']= array (
     'message' => '',
     'sender' => 0,
     'recipient' => 0,
+    'sender_deleted' => 0,
+    'recipient_deleted' => 0,
     'private' => 0,
     'date_sent' => '0000-00-00 00:00:00',
-    'read' => 0,
+    'is_read' => 0,
+    'type_d' => 'dialog',
+    'properties' => NULL,
   ),
   'fieldMeta' => 
   array (
@@ -47,6 +51,24 @@ $xpdo_meta_map['socDialogSend']= array (
       'null' => false,
       'default' => 0,
     ),
+    'sender_deleted' => 
+    array (
+      'dbtype' => 'tinyint',
+      'precision' => '1',
+      'phptype' => 'boolean',
+      'attributes' => 'unsigned',
+      'null' => false,
+      'default' => 0,
+    ),
+    'recipient_deleted' => 
+    array (
+      'dbtype' => 'tinyint',
+      'precision' => '1',
+      'phptype' => 'boolean',
+      'attributes' => 'unsigned',
+      'null' => false,
+      'default' => 0,
+    ),
     'private' => 
     array (
       'dbtype' => 'tinyint',
@@ -62,13 +84,27 @@ $xpdo_meta_map['socDialogSend']= array (
       'null' => false,
       'default' => '0000-00-00 00:00:00',
     ),
-    'read' => 
+    'is_read' => 
     array (
       'dbtype' => 'tinyint',
       'precision' => '1',
       'phptype' => 'integer',
       'null' => false,
       'default' => 0,
+    ),
+    'type_d' => 
+    array (
+      'dbtype' => 'varchar',
+      'precision' => '255',
+      'phptype' => 'string',
+      'null' => false,
+      'default' => 'dialog',
+    ),
+    'properties' => 
+    array (
+      'dbtype' => 'text',
+      'phptype' => 'json',
+      'null' => true,
     ),
   ),
 );

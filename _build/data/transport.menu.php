@@ -1,7 +1,7 @@
 <?php
 
 $menus = array();
-
+$tmp = array();
 /*$tmp = array(
 	'socialtools' => array(
 		'description' => 'socialtools_menu_desc',
