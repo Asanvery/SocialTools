@@ -1,5 +1,9 @@
+
+
 **SocialTools** -  это компонент с социальным функционалом для CMS / CMF MODX.
 С его помощью можно отправлять и читать сообщения, получать списки входящих и исходящих сообщений.
+
+<a href='http://socialtools.asanvery.modxcloud.com/'>**Демомострация**</a>
 
 ### 5 шагов для быстрого начала:
 
@@ -67,6 +71,8 @@
 
 **SocialTools** - a component of the social functionality for CMS / CMF MODX.
 With it you can send and read messages, get a list of incoming and outgoing messages.
+
+<a href='http://socialtools.asanvery.modxcloud.com/en/'>**Demo**</a>
 
 ### 5 steps for quick start:
 
