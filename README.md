@@ -42,9 +42,9 @@
 
 **5. Сделать правки в чанках по умолчанию.**
 
-Изменить readMsgResourceID - на id вашего ресурса с вызовом сниппета для чтения сообщений.
+Изменить id - на id вашего ресурса с вызовом сниппета для чтения сообщений.
 
-Изменить formSendResourceID - на id вашего ресурса с вызовом сниппета для формы отправки сообщения.
+Изменить id - на id вашего ресурса с вызовом сниппета для формы отправки сообщения.
 
 ### Дополнения
 
@@ -109,9 +109,9 @@ With it you can send and read messages, get a list of incoming and outgoing mess
 
 **5. Make editings in the chunks by default.**
 
-Change readMsgResourceID - the id of the resource to call your snippet to read messages
+Change id - the id of the resource to call your snippet to read messages
 
-Change formSendResourceID - the id of the resource to call your snippet to send form message
+Change id - the id of the resource to call your snippet to send form message
 
 ### Addons
 
