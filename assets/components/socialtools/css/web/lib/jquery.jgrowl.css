@@ -1,6 +1,8 @@
 .socialtools-message-success  {background-color: green !important;}
 .socialtools-message-error  {background-color: brown !important;}
 .socialtools-message-info  {background-color: black !important;}
+.socialtools-message-check  {background-color: black !important;}
+.socialtools-message-check input {color:black;}
 div.jGrowl {
 	z-index: 			9999;
 	color: 				#fff;

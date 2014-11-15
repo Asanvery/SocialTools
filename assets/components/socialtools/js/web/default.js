@@ -19,6 +19,8 @@ SocialTools = {
 					document.write('<script src="'+SocialToolsConfig.jsUrl+'lib/alertify.min.js"><\/script>');
 			break;
 		}
+
+		//setInterval(function() { SocialTools.Notify.check("<input type='text' value='text' >"); }, 5000)
 		
 		
 	},
@@ -126,7 +128,24 @@ SocialTools.Notify = {
 				}
 		}
 	}
-
+	,check: function(message) {
+		if (message) {
+			switch(SocialToolsConfig.notify)
+				{
+					case 'alertify':
+						alertify.set({ delay: 5000 });
+						alertify.log(message,"",0);
+						break;
+					case 'jgrowl':
+						$.jGrowl(message, {theme: 'socialtools-message-check',sticky:true,position:'bottom-right'});
+						break;
+					case 'default':
+						alertify.set({ delay: 5000 });
+						alertify.success(message);
+					break;
+				}
+		}
+	}
 	
 };
 
